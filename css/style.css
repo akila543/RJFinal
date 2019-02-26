@@ -1,0 +1,161 @@
+html body .login{
+  background: url(https://s3.amazonaws.com/etools/themes/metronic/assets/admin/pages/media/bg/wp-03.jpg) no-repeat;
+  background-size: cover;
+  height:100vh !important;
+}
+ .login-box{
+   width: 280px;
+   position: absolute;
+   top: 40%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   color: white
+ }
+
+ .login-box h2{
+   float: left;
+   font-size: 25px;
+   border-bottom: 4px solid #4caf50;
+   margin-bottom: 50px;
+   padding: 10px 0
+ }
+
+ .textbox{
+   width: 100%;
+   overflow: hidden;
+   font-size: 15px,
+   padding: 4px 0;
+   margin: 4px 0;
+   border-bottom: 1px solid #4caf50;
+ }
+
+ .textbox input{
+   border: none;
+   outline: none;
+   background: none;
+   color: white;
+   font-size: 18px;
+   width: 80px;
+   float: left;
+   margin: 10 10px;
+ }
+
+ html body .customer{
+   background: url(https://ak9.picdn.net/shutterstock/videos/1937959/thumb/1.jpg) no-repeat;
+   background-size: cover;
+   height:100vh !important;
+ }
+ html body .display{
+   background: url(https://ak9.picdn.net/shutterstock/videos/1937959/thumb/1.jpg) no-repeat;
+   background-size: cover;
+   height:100vh !important;
+ }
+
+
+ html body .customerform{
+   background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTCU2m3EBSTkObAJRE-4upCwN5GzzGi-rOjuVNVYzYbTWOnP643A) no-repeat;
+   background-size: cover;
+   height: 100vh !important;
+ }
+ html body .customerChild{
+   background:none;
+  }
+
+ html body .customerChild1{
+   background: none;
+   height: 100vh !important;
+   width: 191px !important;
+ }
+ .customFirstName  {
+   font-size: 140px !important;
+   color: black !important;
+ }
+ .customFirstName .MuiInput-root-130{
+   font-size: 20px !important;
+ }
+.customMiddleName .MuiInputLabel-animated-124 {
+  font-size: 140% !important;
+  color: black !important;
+}
+.customMiddleName .MuiInput-root-130{
+  font-size: 20px !important;
+}
+.customLastName .MuiInputLabel-animated-124 {
+  font-size: 140% !important;
+  color: black !important;
+}
+.customLastName .MuiInput-root-130{
+  font-size: 20px !important;
+}
+.customPreferedName .MuiInputLabel-animated-124 {
+  font-size: 140% !important;
+  color: black !important;
+}
+.customPreferedName .MuiInput-root-130{
+  font-size: 20px !important;
+}
+ .customStreet .MuiInputLabel-animated-124{
+   font-size: 140% !important;
+   color: black !important;
+ }
+ .customStreet .MuiInput-root-130{
+   font-size: 20px !important;
+ }
+.customDOB  .MuiInputLabel-animated-124{
+  font-size: 140% !important;
+  color: black !important;
+}
+.customApi .MuiInputLabel-animated-124{
+  font-size: 130% !important;
+  color: black !important;
+}
+.customApi .MuiInput-root-130{
+  font-size: 20px !important;
+}
+.customZip .MuiInputLabel-animated-124{
+  font-size: 130% !important;
+  color: black !important;
+}
+.customZip .MuiInput-root-130{
+  font-size: 20px !important;
+}
+.customCity .MuiInputLabel-animated-124{
+  font-size: 130% !important;
+  color: black !important;
+}
+.customCity .MuiInput-root-130{
+  font-size: 20px !important;
+}
+
+.customState .MuiInputLabel-animated-124{
+  font-size: 130% !important;
+  color: black !important;
+}
+.customState .MuiInput-root-130{
+  font-size: 20px !important;
+}
+.customGender .MuiInputLabel-animated-124{
+  font-size: 130% !important;
+  color: black !important;
+}
+.customGender .MuiInput-root-130{
+  font-size: 20px !important;
+}
+.customExpiry  .MuiInputLabel-animated-124{
+  font-size: 140% !important;
+  color: black !important;
+}
+.customEmail .MuiInputLabel-animated-124{
+  font-size: 130% !important;
+  color: black !important;
+}
+.customEmail .MuiInput-root-130{
+  font-size: 20px !important;
+}
+.customPhoneNo .MuiInputLabel-animated-124{
+  font-size: 130% !important;
+  color: black !important;
+}
+.customPhoneNo .MuiInput-root-130{
+  font-size: 20px !important;
+}
