@@ -21,7 +21,7 @@ sms.post('/sendSms',bodyparser, (req, res) => {
            body: `Thanks for visting the R.J REYNOLDS Booth @ Orals Event\n
            Here is the Coupon for your next purchase. \n ${file}` ,
            from: '+12563056486',
-           to: '+919113046785'
+           to: '+15619515409'
          })
         .then(message => console.log(message.sid));
 

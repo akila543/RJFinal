@@ -120,7 +120,8 @@ else{
   console.log(file,"items====>");
   this.sendMail(file);
   this.sendSms(file);
-  window.location = "http://localhost:3001/#/displayMessage"
+  window.location = "http://ec2-13-232-44-245.ap-south-1.compute.amazonaws.com:3001/#/displayMessage"
+
 }
 }
 
