@@ -58,7 +58,7 @@ return (
             <br/>
             <br/>
             <div>
-             <Button style={{marginLeft:"380px",border:"1px solid black",fontSize:'20px'}} as={Link} to='/'>Click Here to go Home Page</Button>
+             <Button style={{marginLeft:"380px",border:"1px solid black",fontSize:'20px'}} as={Link} to='/'>Click Here to go to Home Page</Button>
             </div>
 
            </div>

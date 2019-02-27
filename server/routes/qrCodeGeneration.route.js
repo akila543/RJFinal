@@ -47,8 +47,8 @@ qrCode.post('/sendMail',bodyparser, (req, res) => {
   sendMail.send({
   	to:req.body.email,
   	subject:'RJ Reynolds',
-    html:'<center><h1>Hi '+req.body.name +'!!!!! Thanks for visting the RJ Reynolds Booth @ Orals Event</h1>'+
-    '<br><h3>We are happy to present you a coupon</h3><br>'+
+    html:'<center><h1>Hi '+req.body.name +'!!!!! Thanks for visting the R.J REYNOLDS Booth @ Orals Event</h1>'+
+    '<br><h3>Here is the Coupon for your next purchase.</h3><br>'+
     '<br><img src="cid:unique@kreata.ee"/><br></center><p</p><br>',
     attachments: [{
       // filename: 'Tarun.png',

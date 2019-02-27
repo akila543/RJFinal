@@ -22,14 +22,14 @@ return (
        <div style={{backgroundColor:'#000',height:window.innerHeight,width:window.innerWidth}}>
           <div style={{height:window.innerHeight,width:window.innerWidth/3,backgroundColor:'#aa2525',float:'left'}}>
 
-        <Image style={{marginTop:"300px",marginLeft:'50px'}} src='./images/finaltit.JPG' size='Small' />
+        <Image style={{marginTop:"320px",marginLeft:'80px'}} src='./images/logo1.JPG' size='Small' />
           </div>
           <div style={{height:window.innerHeight,width:(window.innerWidth/4)*4,backgroundColor:'#ebeef4'}}>
             <Grid style={{paddingTop:"150px"}}>
             <Grid.Row>
             <Grid.Column width={4}/>
             <Grid.Column width={10}>
-              <Header as='h1' style={{letterSpacing:'1px',color:'black',color:'#aa2525',paddingLeft:"80px"}}>Login</Header>
+              <Header as='h1' style={{letterSpacing:'1px',color:'black',color:'#aa2525',paddingLeft:"25px"}}>Ambassador Login</Header>
             </Grid.Column>
             <Grid.Column width={2}/>
           </Grid.Row>

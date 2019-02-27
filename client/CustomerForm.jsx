@@ -6,7 +6,65 @@ import { Grid, Icon, Header, Image, Dropdown, Radio, Button, Form, Input, TextAr
 
 const URL = require('./dev.js').URL;
 const stateOptions = [ { key: 'AL', value: 'AL', text: 'Alabama' } ,
-                         { key: 'AK', value: 'AK', text: 'Alaska' }      ];
+                      { key: 'AK', value: 'AK', text: 'Alaska' },
+                      {key: 'AS', value: 'AS', text: 'American Samoa'},
+                      {key:'AZ',value:'AZ',text:'Arizona'},
+                      {key:'AR',value:'AR',text:'Arkansas'},
+                      {key:'CA',value:'CA',text:'California'},
+                      {key:'CO',value:'CO',text:'Colorado'},
+                      {key:'CT',value:'CT',text:'Connecticut'},
+                      {key:'DE',value:'DE',text:'Delaware'},
+                      {key:'DC',value:'DC',text:'District Of Columbia'},
+                      {key:'FM',value:'FM',text:'Federated States Of Micronesia'},
+                      {key:'FL',value:'FL',text:'Florida'},
+                      {key:'GA',value:'GA',text:'Georgia'},
+                      {key:'GU',value:'GU',text:'Guam'},
+                      {key:'HI',value:'HI',text:'Hawaii'},
+                      {key:'ID',value:'ID',text:'Idaho'},
+                      {key:'IL',value:'IL',text:'Illinois'},
+                      {key:'IN',value:'IN',text:'Indiana'},
+                      {key:'IA',value:'IA',text:'Iowa'},
+                      {key:'KS',value:'KS',text:'Kansas'},
+                      {key:'KY',value:'KY',text:'Kentucky'},
+                      {key:'LA',value:'LA',text:'Louisiana'},
+                      {key:'ME',value:'ME',text:'Maine'},
+                      {key:'MH',value:'MH',text:'Marshall Islands'},
+                      {key:'MD',value:'MD',text:'Maryland'},
+                      {key:'MA',value:'MA',text:'Massachusetts'},
+                      {key:'MI',value:'MI',text:'Michigan'},
+                      {key:'MN',value:'MN',text:'Minnesota'},
+                      {key:'MS',value:'MS',text:'Mississippi'},
+                      {key:'MO',value:'MO',text:'Missouri'},
+                      {key:'MT',value:'MT',text:'Montana'},
+                      {key:'NE',value:'NE',text:'Nebraska'},
+                      {key:'NV',value:'NV',text:'Nevada'},
+                      {key:'NH',value:'NH',text:'New Hampshire'},
+                      {key:'NJ',value:'NJ',text:'New Jersey'},
+                      {key:'NM',value:'NM',text:'New Mexico'},
+                      {key:'NY',value:'NY',text:'New York'},
+                      {key:'NC',value:'NC',text:'North Carolina'},
+                      {key:'ND',value:'ND',text:'North Dakota'},
+                      {key:'MP',value:'MP',text:'Northern Mariana Islands'},
+                      {key:'OH',value:'OH',text:'Ohio'},
+                      {key:'OK',value:'OK',text:'Oklahoma'},
+                      {key:'OR',value:'OR',text:'Oregon'},
+                      {key:'PW',value:'PW',text:'Palau'},
+                      {key:'PA',value:'PA',text:'Pennsylvania'},
+                      {key:'PR',value:'PR',text:'Puerto Rico'},
+                      {key:'RI',value:'RI',text:'Rhode Island'},
+                      {key:'SC',value:'SC',text:'South Carolina'},
+                      {key:'SD',value:'SD',text:'South Dakota'},
+                      {key:'TN',value:'TN',text:'Tennessee'},
+                      {key:'TX',value:'TX',text:'Texas'},
+                      {key:'UT',value:'UT',text:'Utah'},
+                      {key:'VT',value:'VT',text:'Vermont'},
+                      {key:'VI',value:'VI',text:'Virgin Islands'},
+                      {key:'VA',value:'VA',text:'Virginia'},
+                      {key:'WA',value:'WA',text:'Washington'},
+                      {key:'WV',value:'WV',text:'West Virginia'},
+                      {key:'WI',value:'WI',text:'Wisconsin'},
+                      {key:'WY',value:'WY',text:'Wyoming'}
+                    ];
  const genderOptions = [ { key: 'Male', value: 'Male', text: 'Male' } ,
                         { key: 'Female', value: 'Female', text: 'Female' }      ];
 class customerForm extends React.Component {
@@ -61,7 +119,7 @@ else{
    var file=items[Math.floor(Math.random()*items.length)];
   console.log(file,"items====>");
   this.sendMail(file);
-   this.sendSms(file);
+  this.sendSms(file);
   window.location = "http://localhost:3001/#/displayMessage"
 }
 }
@@ -96,7 +154,7 @@ return (
 
        <div style={{backgroundColor:'#000',height:window.innerHeight,width:window.innerWidth}}>
           <div style={{height:window.innerHeight,width:window.innerWidth/4,backgroundColor:'#aa2525',float:'left'}}>
-            <Image style={{marginTop:"300px",marginLeft:'15px'}} src='./images/finaltit.JPG' size='Small' />
+            <Image style={{marginTop:"320px",marginLeft:'40px'}} src='./images/logo1.JPG' size='Small' />
           </div>
           <div style={{height:window.innerHeight,width:(window.innerWidth/4)*4,backgroundColor:'#fff'}}>
             <Grid style={{paddingTop:"50px"}}>
@@ -112,7 +170,7 @@ return (
           <Grid.Column width={7}>
             <Form>
               <Form.Field >
-               <label style={{color:"#aa2525",fontSize:"20px",paddingBottom:"8px"}}>First Name</label>
+               <label style={{color:"#aa2525",fontSize:"20px",paddingBottom:"8px"}}>First Name *</label>
                <input style={{border:'1px solid #aa2525'}} onChange={this.handleFirstName}placeholder='First Name' required/>
              </Form.Field>
             </Form>
@@ -134,7 +192,7 @@ return (
         <Grid.Column width={7}>
           <Form>
             <Form.Field >
-             <label style={{color:"#aa2525",fontSize:"20px",paddingBottom:"8px"}}>Last Name</label>
+             <label style={{color:"#aa2525",fontSize:"20px",paddingBottom:"8px"}}>Last Name *</label>
              <input style={{border:'1px solid #aa2525'}} onChange={this.handleLastName} placeholder='Last Name' />
            </Form.Field>
           </Form>
@@ -228,7 +286,7 @@ return (
 <Grid.Column width={7}>
 <Form>
   <Form.Field >
-   <label style={{color:"#aa2525",fontSize:"20px",paddingBottom:"8px"}}>Email</label>
+   <label style={{color:"#aa2525",fontSize:"20px",paddingBottom:"8px"}}>Email *</label>
    <Form.Input style={{border:'1px solid #aa2525'}} onChange={this.handleEmailChange} value={this.state.email} required placeholder='Email Address' control='input' type='email'  />
  </Form.Field>
 </Form>
@@ -236,7 +294,7 @@ return (
 <Grid.Column width={7}>
 <Form>
   <Form.Field >
-   <label style={{color:"#aa2525",fontSize:"20px",paddingBottom:"8px"}}>Phone No</label>
+   <label style={{color:"#aa2525",fontSize:"20px",paddingBottom:"8px"}}>Phone No*</label>
    <Form.Input style={{border:'1px solid #aa2525'}} onChange={this.handlePhoneNo} value={this.state.phone_no} required placeholder='Phone No' control='input' type='number'  />
  </Form.Field>
 </Form>
